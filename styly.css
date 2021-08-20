@@ -15,6 +15,7 @@
     text-align: center;
     font-family: Lobster;
     font-size: 200%;
+    padding-top: 15px;
    }
    p {
     background-color: #283e50;
@@ -63,3 +64,34 @@
     text-align: center;
     line-height: 50px;
     }
+    .Pravidla {
+    color: #ffffff;
+    padding: 15px;
+    max-width: 700px;
+    }
+    .Pravidla li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    .Pravidla p {
+    font-style: italic;
+    margin-top: -10px;
+    }
+    .Pravidla img {
+    }
+    .kolecko {
+    max-width: 20px;
+    max-height: 20px;
+    filter: invert();
+    }
+    .krizek {
+    max-width: 20px;
+    max-height: 20px;
+    filter: invert();
+    }
+    @media screen and (min-width: 1000px) {
+        .Pravidla img {
+            width: 50%;
+        
+        };
+      }
