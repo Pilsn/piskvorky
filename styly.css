@@ -109,6 +109,9 @@
     max-height: 12px;
     filter: invert();
     }
+    .Mezera {
+    margin-bottom: 400px;
+    }
     @media screen and (min-width: 700px){
         .Pravidla img {
             width: 95%;
