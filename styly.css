@@ -1,14 +1,10 @@
     html {
     background: linear-gradient(#615dad, #ffc8da);
-    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    margin:0;
-    padding:0;
     }
     .MyClass img {
     width: 100%;
@@ -27,6 +23,12 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
    }
+   .hra h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: Lobster;
+    background-color: transparent;
+   }
    p {
     background-color: #283e50;
     color: #ffffff;
@@ -34,6 +36,19 @@
     font-family: Helvetica;
     font-size: 100%;
     padding: 15px;
+   }
+   .hra p {
+    color: #ffffff;
+    text-align: left;
+    font-family: Helvetica;
+    font-size: 100%;
+    padding: 15px;
+    background-color: transparent;
+    text-transform: uppercase;
+    display: inline;
+    float: left;
+    padding: 5px;
+    font-size: 3vh;
    }
     #button1 {
     background-color: #1fcca4;
@@ -58,12 +73,17 @@
 
     }
     #button2:hover {
-        background-color: #0090e9;
+    background-color: #0090e9;
     }
-    body {
+    .wrapper {
     background-color: #283e50;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 50%;
+    margin: 50px auto;
+    max-width: 770px;
+    }
+    .wrapper1 {
     width: 50%;
     margin: 50px auto;
     max-width: 770px;
@@ -74,6 +94,27 @@
     overflow-y: auto;
     text-align: center;
     line-height: 50px;
+    }
+    .button3 {
+        background-color: #1fcca4;
+        color: transparent;
+        text-decoration: none;
+        text-align: center;
+        float: right;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 2.5em;
+    }
+    .button4 {
+        background-color: #0197f6;
+        color: transparent;
+        text-decoration: none;
+        float: right;
+        border-radius: 5px;
+        margin-left: 5px;
+        padding: 5px;
+        margin-top: 2.5em;
+        margin-right: 8.7vw;
     }
     .Pravidla {
     color: #ffffff;
@@ -104,6 +145,11 @@
     max-height: 12px;
     filter: invert();
     }
+    .kolecko1 {
+    filter: invert();
+    height: 1em;
+    width: auto;
+    }
     .krizek {
     max-width: 12px;
     max-height: 12px;
@@ -111,6 +157,43 @@
     }
     .Mezera {
     margin-bottom: 400px;
+    }
+    .mrizka {
+    margin-top: 20px;
+    width: 40vw;
+    display: grid;
+    grid-template-columns: repeat(10, 4vw);
+    grid-template-rows: repeat(10, 4vw);
+    -webkit-box-shadow: 0 0 10px #000;
+        box-shadow: 0 0 10px #000;
+    }
+    .pokus {
+        box-sizing: border-box;
+    }
+    button {
+        border: 1px solid;
+    }
+    .mrizka button{
+        background-color: transparent;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        border: 1px solid;
+    }
+    .mrizka button:hover {
+        background-color: #ffc8da;
+        filter: brightness(95%);
+    }
+    .hra .kolecko1 {
+        vertical-align: text-top;
+    }
+    #hraje {
+        margin-top: 1.7em;
+    }
+    .hra #hraje .kolecko1 {
+    filter: invert();
+    height: 2em;
+    width: auto;
     }
     @media screen and (min-width: 700px){
         .Pravidla img {
@@ -166,3 +249,25 @@
             margin-right: auto;
         }
     }
+    @media screen and (max-width: 699px){
+        .wrapper1 {
+            width: 60vw;
+        }
+        .mrizka {
+            display: grid;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60vw;
+            display: grid;
+            grid-template-columns: repeat(10, 6vw);
+            grid-template-rows: repeat(10, 6vw);
+        }
+        .mrizka .zona {
+        }
+        .pokus {
+        }
+        .hra p {
+            margin-top: 1.7em;
+
+        }
+        }
