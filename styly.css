@@ -147,7 +147,6 @@
     }
     .kolecko1 {
     filter: invert();
-    height: 1em;
     width: auto;
     }
     .krizek {
@@ -192,8 +191,30 @@
     }
     .hra #hraje .kolecko1 {
     filter: invert();
-    height: 2em;
+    height: 1em;
     width: auto;
+    }
+    .hra #hraje .krizek1 {
+        filter: invert();
+        height: 1em;
+        width: auto;
+    }
+
+    .mrizka .krizek {
+        filter: invert();
+        width: auto;
+        max-width: none;
+        max-height: none;
+    }
+    .mrizka .kolecko1 {
+        filter: invert();
+        width: auto;
+        max-width: none;
+        max-height: none;
+        height:none !important;
+    }
+    .Full {
+    pointer-events: none;
     }
     @media screen and (min-width: 700px){
         .Pravidla img {
@@ -251,16 +272,16 @@
     }
     @media screen and (max-width: 699px){
         .wrapper1 {
-            width: 60vw;
+            width: 80vw;
         }
         .mrizka {
             display: grid;
             margin-left: auto;
             margin-right: auto;
-            width: 60vw;
+            width: 80vw;
             display: grid;
-            grid-template-columns: repeat(10, 6vw);
-            grid-template-rows: repeat(10, 6vw);
+            grid-template-columns: repeat(10, 8vw);
+            grid-template-rows: repeat(10, 8vw);
         }
         .mrizka .zona {
         }
@@ -268,6 +289,29 @@
         }
         .hra p {
             margin-top: 1.7em;
-
         }
+        .hra #hraje .kolecko1 {
+            filter: invert();
+            height: 1em;
+            width: auto;
+            }
+        .hra #hraje .krizek1 {
+            filter: invert();
+            height: 1em;
+            width: auto;
+            }
+        .mrizka .krizek {
+            filter: invert();
+            width: auto;
+            max-width: none;
+            max-height: none;
+            height: 1em !important;
+            }
+        .mrizka .kolecko1 {
+            filter: invert();
+            width: auto;
+            max-width: none;
+            max-height: none;
+            height: 1em !important;
         }
+    }
